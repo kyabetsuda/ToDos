@@ -46,6 +46,10 @@ class InputViewController: UIViewController {
         memo.inputAccessoryView = toolBar2
         
         date.font = UIFont(name: "HelveticaNeue-Light", size: 17)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        date.text = formatter.string(from: Date())
+        
         memo.font = UIFont(name: "HelveticaNeue-Light", size: 17)
         
         dateLabel.font = UIFont(name: "HelveticaNeue-Light", size: 17)
